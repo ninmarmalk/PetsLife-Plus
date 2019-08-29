@@ -465,9 +465,6 @@ header {
     padding: 2px;
   }
 
-  .banners p {
-  }
-
   .banners h2 {
     font-size: 5vw;
   }
@@ -506,10 +503,10 @@ header {
 
   #grid-terms button {
     width: 60%;
-    font-size: 2vw;
+    font-size: 1.8vw;
   }
 
   #grid-terms p {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
   }
 }
