@@ -10,7 +10,6 @@
 body {
   font-family: "Noto Sans", sans-serif;
   background-color: #fff;
-  color: black;
 }
 
 ul {
@@ -58,11 +57,9 @@ header {
 
 #flyer-text {
   text-transform: uppercase;
-  font-size: 0.8rem;
 }
 
 .fa-chevron-right {
-  font-size: 0.8rem;
   margin-left: 0.3rem;
 }
 
@@ -243,7 +240,8 @@ header {
   filter: brightness(60%);
 }
 
-.banners button:hover {
+.banners button:hover,
+#grid-terms button:hover {
   background-color: #d41734;
 }
 
@@ -451,6 +449,10 @@ header {
 }
 
 @media (max-width: 600px) {
+  .top-nav li:nth-child(-n + 2) {
+    display: none;
+  }
+
   .dog-shop,
   .cat-shop {
     width: 18rem;
@@ -470,6 +472,15 @@ header {
   .shop-btn {
     font-size: 1.3rem;
     width: 40%;
+  }
+
+  #search {
+    text-align: center;
+  }
+
+  #search input {
+    width: 90%;
+    font-size: 1.5rem;
   }
 
   .grid {
