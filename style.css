@@ -151,9 +151,14 @@ header {
   transition: color 0.3s;
 }
 
+#search {
+  width: 300px;
+  display: flex;
+}
+
 #search input {
   font-size: 1.1rem;
-  margin-left: 3rem;
+  margin-left: 6rem;
   border: none;
   padding: 0.4rem;
   width: 100%;
@@ -289,11 +294,15 @@ header {
   top: 125%;
 }
 
+#social {
+  display: inline;
+}
+
 .grid {
   margin-top: 6rem;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 15vw);
+  grid-template-rows: repeat(3, 15vw);
   align-items: stretch;
 }
 
@@ -328,6 +337,63 @@ header {
   border: none;
   cursor: pointer;
   border-radius: 3px;
+}
+
+#signup {
+  background-color: #474646;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#signup p {
+  font-size: 2rem;
+  color: #feffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subscribe {
+  margin-top: 2rem;
+  display: flex;
+}
+
+form button {
+  height: 50px;
+  width: 50px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  background-color: #0064b1;
+  color: #feffff;
+  text-transform: uppercase;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: #036fc2;
+}
+
+form input[type="email"] {
+  height: 50px;
+  width: 300px;
+  border: none;
+  text-align: center;
+  line-height: 220px;
+  font-size: 1.4rem;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.3s linear;
+  color: black;
+  font-size: 1.3rem;
+}
+
+input[type="email"]:focus::-webkit-input-placeholder {
+  opacity: 0;
 }
 
 @media (max-width: 1420px) {
