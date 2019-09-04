@@ -406,7 +406,7 @@ footer {
 .footer-cols {
   font-size: 0.8rem;
   width: 70%;
-  margin: 3rem auto;
+  margin: 2.5rem auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 2rem;
@@ -518,6 +518,10 @@ footer {
 }
 
 @media (max-width: 800px) {
+  .head-top {
+    margin: 0 1rem;
+  }
+
   #logo {
     font-size: 2rem;
     left: 0;
@@ -552,6 +556,15 @@ footer {
 
   #grid-terms p {
     font-size: 0.7rem;
+  }
+
+  .footer-cols {
+    font-size: 0.8rem;
+    width: 80%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
   }
 }
 
