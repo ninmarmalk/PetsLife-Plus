@@ -158,16 +158,30 @@ header {
 #search {
   width: 300px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #search input {
-  font-size: 1.1rem;
+  font-size: 0.85rem;
   margin-left: 6rem;
   border: none;
   padding: 0.4rem;
   width: 100%;
   border-radius: 2px;
 }
+
+#search button {
+  margin-left: 0.6rem;
+  margin-bottom: 0.2rem;
+  font-size: 1.7rem;
+  border: none;
+  background-color: #0064b1;
+  color: #feffff;
+}
+
+/* Carousel */
 
 .your-class img {
   width: 100%;
@@ -371,7 +385,7 @@ header {
   display: flex;
 }
 
-form button {
+.subscribe button {
   height: 50px;
   width: 50px;
   font-size: 1.4rem;
@@ -471,6 +485,7 @@ footer {
 
   #search input {
     margin: 0.7rem 0;
+    font-size: 1rem;
   }
 
   .dog-shop,
@@ -545,8 +560,12 @@ footer {
   }
 
   #search input {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-left: 0;
+  }
+
+  #search button {
+    font-size: 2rem;
   }
 
   .dog-shop,
