@@ -587,6 +587,10 @@ footer {
     font-size: 0.7rem;
   }
 
+  footer {
+    height: auto;
+  }
+
   .footer-cols {
     font-size: 0.8rem;
     width: 80%;
@@ -657,5 +661,13 @@ footer {
 
   #grid-terms p {
     font-size: 0.75rem;
+  }
+
+  #signup p {
+    font-size: 1.7rem;
+  }
+
+  form input[type="email"] {
+    width: 200px;
   }
 }
