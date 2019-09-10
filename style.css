@@ -124,39 +124,105 @@ header {
 
 .head-bottom {
   height: 30%;
-}
-
-.animal-nav {
-  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   flex-wrap: wrap;
 }
 
-.animal-nav ul {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navbar {
+  overflow: hidden;
 }
 
-.animal-nav ul li {
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #feffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #feffff;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
   margin: 0 0.5rem;
-  font-weight: bold;
 }
 
-.animal-nav ul li a {
-  padding: 15px;
-}
-
-.animal-nav ul li a:hover {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
   color: #e51837;
-  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: #e51837;
+  padding: 16px;
+  color: #feffff;
+  margin: -10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: rgb(240, 240, 240);
+  height: 400px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
 }
 
 #search {
-  width: 300px;
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -462,17 +528,14 @@ footer {
 }
 
 @media (max-width: 1420px) {
-  .animal-nav {
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-
   .head-top {
     height: 50%;
   }
 
   .head-bottom {
     height: 50%;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   #logo {
@@ -506,10 +569,6 @@ footer {
     font-size: 1.5rem;
   }
 
-  .animal-nav ul li {
-    margin: 0;
-  }
-
   .top-nav ul li {
     margin: 0 0.5rem;
   }
@@ -534,6 +593,10 @@ footer {
     justify-content: space-between;
   }
 
+  .dropdown .dropbtn {
+    margin: 0;
+  }
+
   .dog-shop,
   .cat-shop {
     width: 45rem;
@@ -551,7 +614,7 @@ footer {
     font-size: 2rem;
     left: 0;
   }
-  .animal-nav ul {
+  .dropdown {
     display: none;
   }
 
@@ -639,6 +702,7 @@ footer {
 
   #search {
     text-align: center;
+    width: 270px;
   }
 
   #search input {
