@@ -5,4 +5,3 @@ https://ninmarmalk.github.io/PetsLife-Plus/
 
 ## PetsLife Plus!
 
-![Alt Text]()
