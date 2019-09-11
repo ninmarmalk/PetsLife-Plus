@@ -5,3 +5,4 @@ https://ninmarmalk.github.io/PetsLife-Plus/
 
 ## PetsLife Plus!
 
+![](https://media.giphy.com/media/Ida7yho4IJwv0GBkZg/giphy-downsized-large.gif)
